@@ -36,9 +36,11 @@ def parse_slack_output(slack_rtm_output):
 
 if __name__ == "__main__":
     READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
-    parser = MessageParser()
     if slack_client.rtm_connect():
         print("StarterBot connected and running!")
+        slackEmoji = slack_client.api_call('emoji.list')['emoji'].keys()
+        parser = MessageParser(slackEmoji)
+
         while True:
             command, channel = parse_slack_output(slack_client.rtm_read())
             if command and channel:
