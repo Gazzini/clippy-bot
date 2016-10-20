@@ -1,7 +1,5 @@
-import abc
 from module import TestModule
 import re
-import requests
 
 class FoxIssueTracker(TestModule):
 	def getJiraIssueFromText(self, text):

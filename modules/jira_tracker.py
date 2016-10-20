@@ -1,6 +1,4 @@
-import abc
 from fox_issue_tracker import FoxIssueTracker
-import re
 import requests
 
 class JiraTracker(FoxIssueTracker):
