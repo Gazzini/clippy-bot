@@ -1,9 +1,9 @@
 import abc
-from module import Module
+from module import TestModule
 import re
 import requests
 
-class FoxIssueTracker(Module):
+class FoxIssueTracker(TestModule):
 	def getJiraIssueFromText(self, text):
 		issue = re.search('(?:^|\s)(FOX|TUT)-(\+?\d+)(?:\s|$)', text)
 		if not issue:

@@ -1,11 +1,5 @@
-import abc
-
-class Module(object):
-	__metaclass__ = abc.ABCMeta
-
-	@abc.abstractmethod
-	def shouldRespond(self, text):
-		pass
-	@abc.abstractmethod
-	def responseMessage(self, text):
-		pass
+class TestModule():
+	def shouldRespond(self, message):
+		return True
+	def getResponse(self, message):
+		return "test message"
