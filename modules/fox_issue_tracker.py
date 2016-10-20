@@ -10,5 +10,5 @@ class FoxIssueTracker(TestModule):
 
 	def shouldRespond(self, text):
 		pass
-	def responseMessage(self, text):
+	def getResponse(self, text):
 		pass

@@ -11,7 +11,6 @@ class JiraTracker(FoxIssueTracker):
 			return False
 		else:
 			return True
-	def responseMessage(self, text):
-		pass
-a = JiraTracker()
-print(a.shouldRespond("FOX-19315 aa "))
+	def getResponse(self, text):
+		jiraIssue = self.getJiraIssueFromText(text)
+		return 'I found a Jira issue matching ' + jiraIssue + '! https://bugs.rev.com/browse/' + jiraIssue

@@ -1,7 +1,7 @@
 import random
-from modules.module import TestModule
+from modules.jira_tracker import JiraTracker
 
-MODULES = [TestModule]
+MODULES = []
 
 class MessageParser:
 
@@ -20,7 +20,7 @@ class MessageParser:
 
 	def alertModules(self, message):
 		response = ""
-		thisModule = TestModule()
+		thisModule = JiraTracker()
 		if thisModule.shouldRespond(message):
 			response += thisModule.getResponse(message) + "\n"
 
