@@ -9,10 +9,10 @@ We followed this tutorial for setup:
 https://www.fullstackpython.com/blog/build-first-slack-bot-python.html
 
 - [ ] Make the callbacks event-driven
-- [ ] Identify FOX-XXXX and TUT-XXXX in messages
-- [ ] Generate the JIRA links
-- [ ] Create GitHub links
+- [x] Identify FOX-XXXX and TUT-XXXX in messages
+- [x] Generate the JIRA links
+- [x] Create GitHub links
 - [ ] Host on AWS
-- [ ] Move repository over to Rev github
-- [ ] Get a logo
-- [ ] Pick a name
+- [x] Move repository over to Rev github
+- [x] Get a logo
+- [x] Pick a name
